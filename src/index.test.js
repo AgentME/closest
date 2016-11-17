@@ -17,8 +17,6 @@ document.body.innerHTML = `
   </section>
 `;
 
-// ['native', 'not native'].forEach(label => {
-//   describe(label, () => {
 test('works', () => {
   expect(closest(document.querySelector('#a .first'), 'section')).toBe(
     document.querySelector('#a')
@@ -36,5 +34,3 @@ test('can match self', () => {
     document.querySelector('#b .first')
   );
 });
-//   });
-// });
