@@ -34,3 +34,15 @@ test('can match self', () => {
     document.querySelector('#b .first')
   );
 });
+
+test('can match body', () => {
+  expect(closest(document.querySelector('#a .first'), 'body')).toBe(
+    document.body
+  );
+});
+
+test('can match document', () => {
+  expect(closest(document.querySelector('#a .first'), 'html')).toBe(
+    document.documentElement
+  );
+});
