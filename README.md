@@ -1,21 +1,19 @@
-# Closest
+# Closest-ng
+
 
 Similar to jQuery's `$.fn.closest` and `$.fn.parents`.
 Finds the closest parent that matches a selector.
 
 ## Installation
 
-    $ npm install closest
+    $ npm install --save closest-ng
 
 ## API
 
-### `closest(element, selector, checkSelf)`
+### `closest(element, selector)`
 
-* element - will check this elements parents
+* element - will check this element's parents
 * selector - CSS selector to match parents
-* checkSelf - check `element`.
-  If falsey, will begin with `element.parentNode` and is synonymous to `$.fn.parents`.
-  Otherwise, it's `$.fn.closest`.
 
 Example:
 
@@ -23,10 +21,5 @@ Example:
 var closest = require('closest');
 
 closest(document.body, 'html') === document.documentElement
-closest(document.body, 'body', true) === document.body
-closest(document.documentElement, 'html') == null
+closest(document.body, 'body') === document.body
 ```
-
-## License
-
-  MIT

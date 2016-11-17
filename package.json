@@ -1,22 +1,24 @@
 {
-  "name": "closest",
-  "version": "0.0.1",
+  "name": "closest-ng",
+  "version": "0.1.0",
   "description": "Find the closest parent that matches a selector.",
   "keywords": [
-    "browserify",
     "CSS",
     "selector",
     "closest",
-    "parents",
-    "jquery"
+    "parents"
   ],
   "dependencies": {
-    "matches-selector": "0.0.1"
+    "matches-selector-ng": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/AgentME/closest-ng/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ForbesLindesay/closest.git"
+    "url": "git+https://github.com/AgentME/closest-ng.git"
   },
-  "author": "Jonathan Ong",
+  "homepage": "https://github.com/AgentME/closest-ng#readme",
+  "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT"
 }
