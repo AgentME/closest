@@ -1,8 +1,9 @@
 # Closest-ng
 
-
-Similar to jQuery's `$.fn.closest` and `$.fn.parents`.
-Finds the closest parent that matches a selector.
+Finds the closest ancesor of an element (or the current element itself) that
+matches a selector. Uses the native
+[`closest` method](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest)
+if available in the browser.
 
 ## Installation
 
@@ -17,7 +18,7 @@ Finds the closest parent that matches a selector.
 
 Example:
 
-```javascript
+```js
 var closest = require('closest');
 
 closest(document.body, 'html') === document.documentElement

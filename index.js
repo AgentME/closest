@@ -6,4 +6,5 @@ module.exports = function (element, selector) {
     if (matches(parent, selector)) return parent;
     parent = parent.parentNode;
   } while (parent && parent !== document);
+  return null;
 }
