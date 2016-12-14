@@ -17,32 +17,38 @@ document.body.innerHTML = `
   </section>
 `;
 
+function qs(el, selector): HTMLElement {
+  const r = el.querySelector(selector);
+  if (!r) throw new Error(`Failed to find element with selector: ${selector}`);
+  return r;
+}
+
 test('works', () => {
-  expect(closest(document.querySelector('#a .first'), 'section')).toBe(
-    document.querySelector('#a')
+  expect(closest(qs(document, '#a .first'), 'section')).toBe(
+    qs(document, '#a')
   );
 });
 
 test("doesn't find things it shouldn't", () => {
-  expect(closest(document.querySelector('#a .first'), '.second')).toBe(
+  expect(closest(qs(document, '#a .first'), '.second')).toBe(
     null
   );
 });
 
 test('can match self', () => {
-  expect(closest(document.querySelector('#b .first'), '.first')).toBe(
-    document.querySelector('#b .first')
+  expect(closest(qs(document, '#b .first'), '.first')).toBe(
+    qs(document, '#b .first')
   );
 });
 
 test('can match body', () => {
-  expect(closest(document.querySelector('#a .first'), 'body')).toBe(
+  expect(closest(qs(document, '#a .first'), 'body')).toBe(
     document.body
   );
 });
 
 test('can match document', () => {
-  expect(closest(document.querySelector('#a .first'), 'html')).toBe(
+  expect(closest(qs(document, '#a .first'), 'html')).toBe(
     document.documentElement
   );
 });
