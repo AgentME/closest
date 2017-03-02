@@ -2,7 +2,7 @@
 
 import closest from './';
 
-document.body.innerHTML = `
+(document.body:any).innerHTML = `
   <section id="a">
     <div class="first">
       <em>foo</em>
