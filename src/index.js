@@ -11,6 +11,6 @@ export default function closest(element: HTMLElement, selector: string): ?HTMLEl
   do {
     if (matches(parent, selector)) return parent;
     parent = parent.parentNode;
-  } while (parent && parent !== document);
+  } while (parent && parent !== global.document);
   return null;
 }
