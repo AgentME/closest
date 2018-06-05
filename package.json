@@ -16,9 +16,6 @@
     "closest",
     "parents"
   ],
-  "dependencies": {
-    "matches-selector-ng": "^1.0.0"
-  },
   "bugs": {
     "url": "https://github.com/AgentME/closest-ng/issues"
   },
@@ -29,6 +26,9 @@
   "homepage": "https://github.com/AgentME/closest-ng#readme",
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "matches-selector-ng": "^1.0.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^8.2.3",
