@@ -10,7 +10,7 @@ if available in the browser.
 
 ## Installation
 
-    $ npm install --save closest-ng
+    $ yarn add closest-ng
 
 ## API
 
