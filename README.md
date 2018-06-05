@@ -1,7 +1,6 @@
 # Closest-ng
 
-[![Circle CI](https://circleci.com/gh/AgentME/closest-ng.svg?style=shield)](https://circleci.com/gh/AgentME/closest-ng)
-[![npm version](https://badge.fury.io/js/closest-ng.svg)](https://badge.fury.io/js/closest-ng)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgentME/closest-ng/blob/master/LICENSE.txt) [![npm version](https://img.shields.io/npm/v/closest-ng.svg?style=flat)](https://www.npmjs.com/package/closest-ng) [![CircleCI Status](https://circleci.com/gh/AgentME/closest-ng.svg?style=shield)](https://circleci.com/gh/AgentME/closest-ng)
 
 Finds the closest ancestor of an element (or the current element itself) that
 matches a selector. Uses the native
