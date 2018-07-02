@@ -4,7 +4,7 @@
   "description": "Find the closest parent that matches a selector.",
   "main": "js/index.js",
   "scripts": {
-    "prepare": "babel -s inline -d js/ src/ --ignore '*.test.*' && flow-copy-source -v src js --ignore '*.test.*'",
+    "prepare": "rimraf js/ && babel -s inline -d js/ src/ --ignore '*.test.*' && flow-copy-source -v src js --ignore '*.test.*'",
     "test": "yarn run lint && yarn run flow_check && jest",
     "flow_check": "flow check",
     "lint": "eslint .",
@@ -40,6 +40,7 @@
     "eslint-plugin-flowtype": "^2.25.0",
     "flow-bin": "^0.75.0",
     "flow-copy-source": "^2.0.0",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "rimraf": "^2.6.2"
   }
 }
