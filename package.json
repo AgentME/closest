@@ -1,6 +1,6 @@
 {
   "name": "closest-ng",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Find the closest parent that matches a selector.",
   "main": "js/index.js",
   "sideEffects": false,
