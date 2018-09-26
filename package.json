@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Find the closest parent that matches a selector.",
   "main": "js/index.js",
+  "sideEffects": false,
   "scripts": {
     "prepare": "rimraf js/ && babel -s inline -d js/ src/ --ignore '*.test.*' && flow-copy-source -v src js --ignore '*.test.*'",
     "test": "yarn run lint && yarn run flow_check && jest",
