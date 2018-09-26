@@ -44,5 +44,10 @@
     "flow-copy-source": "^2.0.0",
     "jest": "^23.1.0",
     "rimraf": "^2.6.2"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "flow-bin"
+    ]
   }
 }
