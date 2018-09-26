@@ -5,7 +5,7 @@ import matches from 'matches-selector-ng';
 const proto = global.Element && global.Element.prototype;
 const vendor = proto && proto.closest;
 
-export default function closest(element: HTMLElement, selector: string): ?HTMLElement {
+export default function closest(element: HTMLElement, selector: string): HTMLElement | null {
   if (vendor) return vendor.call(element, selector);
   let parent = element;
   do {
