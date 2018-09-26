@@ -17,13 +17,13 @@
     "parents"
   ],
   "bugs": {
-    "url": "https://github.com/AgentME/closest-ng/issues"
+    "url": "https://github.com/Macil/closest-ng/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgentME/closest-ng.git"
+    "url": "git+https://github.com/Macil/closest-ng.git"
   },
-  "homepage": "https://github.com/AgentME/closest-ng#readme",
+  "homepage": "https://github.com/Macil/closest-ng#readme",
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT",
   "dependencies": {
